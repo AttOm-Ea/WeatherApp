@@ -1,0 +1,36 @@
+.tagCity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 15%;
+    background-image: url('../img/backCard.jpeg');
+    border-radius: 1rem;
+    border: solid .1rem rgb(65, 64, 64);
+    color: rgb(203, 204, 204);
+}
+    .nameTagBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 80%;
+        width: 40%;
+        border-right: solid .1rem rgba(119, 118, 118, 0.348);
+    }
+    .nameTag1{
+        font-size: 1.3rem;
+        color: rgb(255, 255, 255);
+    }
+    .nameTag2{
+        font-size: .8rem;
+        color: rgb(149, 146, 146);
+    }
+    .numbersTag{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 60%;
+    }

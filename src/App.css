@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  background-image: url(./img/random.jpeg);
+  background-position: center;
+  background-size: 100%;
   display: flex;
-  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
+  transition: all 2s ease-in-out;
 }
-
-.App-link {
-  color: #61dafb;
+  .Thunderstorm{
+    background-image: url(./img/thunderstorm.jpeg);
+  }
+  .Drizzle{
+    background-image: url(./img/drizzle.jpeg);
+  }
+  .Rain{
+    background-image: url(./img/rain.jpeg);
+  }
+  .Snow{
+    background-image: url(./img/snow.jpeg);
+  }
+  .Clear{
+    background-image: url(./img/clear.jpeg);
+  }
+  .Clouds{
+    background-image: url(./img/clouds.jpeg);
+  }
+.firstSection{
+  width: 75%;
+  height: 100%;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.secondSection{
+  background: rgba(0, 0, 0, 0.793);
+  width: 25%;
+  height: 100%;
+  box-sizing: content-box;
+}
+.preloader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-position: left;
+  background-position-x: -9rem;
+  background-size: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.412), rgba(0, 0, 0, 0.391)), url(./img/preloader.jpeg);
+  color: rgb(255, 255, 255);
+  transition: all 2s ease-in-out;
 }

@@ -1,0 +1,19 @@
+.complementaryBox{
+    height: 100%;
+    width: 20%;
+}
+.numberComplementary, .nameComplementary{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.numberComplementary{
+    height: 75%;
+    font-size: 3rem;
+}
+.nameComplementary{
+    height: 20%;
+    color: rgb(201, 199, 199);
+}
