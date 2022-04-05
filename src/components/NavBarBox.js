@@ -1,8 +1,24 @@
 import './NavBarBox.css';
 import {useState, useEffect} from "react";
+import { RiThunderstormsFill, RiDrizzleFill, RiRainyFill, RiSnowyFill, RiSunFill, RiCloudFill, RiMistFill} from 'react-icons/ri';
 
-function NavBarBox({City, Country, Temp, Unit, Icon, UrlIcon, Description}) { 
 
+function NavBarBox({City, Country, Temp, Unit, Description, Icon}) { 
+
+    //Custom Icons 
+    const [CustomIcon, setCustomIcon] = useState ({
+        Thunderstorm : <RiThunderstormsFill className='iconCustom'/>,
+        Drizzle : <RiDrizzleFill className='iconCustom'/>,
+        Rain : <RiRainyFill className='iconCustom'/>,
+        Snow : <RiSnowyFill className='iconCustom'/>,
+        Clear : <RiSunFill className='iconCustom'/>,
+        Clouds : <RiCloudFill className='iconCustom'/>,
+        Mist : <RiMistFill className='iconCustom'/>,
+        Fog : <RiMistFill className='iconCustom'/>,
+        Squall : <RiMistFill className='iconCustom'/>,
+        Tornado : <RiMistFill className='iconCustom'/>,
+    });
+    const [IconPrint, setIconPrint] = useState(CustomIcon[Icon]);
     const [Hour, setHour] = useState(0);
     const [Minutes, setMinutes] = useState(0);
     const [Seconds, setSeconds] = useState(0);
@@ -86,7 +102,8 @@ function NavBarBox({City, Country, Temp, Unit, Icon, UrlIcon, Description}) {
                             <div className='leterUnit'> {Unit} </div>
                         </div>
                         <div className='iconWeatherBox'> 
-                            <img src={UrlIcon} alt={Icon}/>
+                            {/* <img src={UrlIcon} alt={Icon}/> */}
+                            {IconPrint}
                         </div>
                     </div>
                 </div>
